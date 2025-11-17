@@ -2,7 +2,8 @@ import pandas as pd
 import streamlit as st
 import requests
 
-FASTAPI_URL = "mist460-course-recommender-apis-bruce.azurewebsites.net/docs"
+FASTAPI_URL = "https://mist460-course-recommender-apis-bruce.azurewebsites.net/docs"
+
 
 def fetch_data(endpoint : str, params : dict, method: str = "get") -> pd.DataFrame:
     if method == "get":
